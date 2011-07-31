@@ -55,6 +55,7 @@ public class RackFilter implements Filter {
         if (capture.isError()) {
             httpResponse.reset();
             request.setAttribute(RackEnvironment.DYNAMIC_REQS_ONLY, Boolean.TRUE);
+	    request.setAttribute(RackEnvironment.PARAMETER_MAP, request.getParameterMap());
             dispatcher.process(env, responseEnv);
         }
     }

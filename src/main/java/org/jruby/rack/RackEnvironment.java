@@ -19,6 +19,7 @@ import java.util.Enumeration;
 public interface RackEnvironment {
     final String EXCEPTION = "jruby.rack.exception";
     final String DYNAMIC_REQS_ONLY = "jruby.rack.dynamic.requests.only";
+    final String PARAMETER_MAP = "jruby.rack.parameter_map";
 
     RackContext getContext();
 
